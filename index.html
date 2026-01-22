@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaheli Azani | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">YA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section d-flex align-items-center text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h1 class="display-4 fw-bold">Hi, I'm <span class="text-primary-custom">Yaheli Azani</span></h1>
+                    <h3 class="fw-light mb-4">Computer Science Student at UMD</h3>
+                    <p class="lead mb-4">I am currently a sophomore studying Computer Science at the University of Maryland. 
+                        My focus is on utilizing machine learning to solve complex problems using a variety
+                        of languages such as Java and Python. I am constantly exploring new technologies in
+                        the rapidly evolving field. I am very excited to expand and apply my skills and 
+                        knowledge in real-world scenarios!.</p>
+                    <a href="#projects" class="btn btn-primary btn-lg custom-btn me-2">View My Work</a>
+                    <a href="https://github.com/yaheli-azani" target="_blank" class="btn btn-outline-light btn-lg custom-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="col-md-5 text-center mt-4 mt-md-0">
+                    <div class="profile-img-container">
+                        <img src="profile.jpg" alt="Yaheli Azani" class="img-fluid profile-pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted lead mb-4">
+                        I was fortunate enough to have lived in five different countries as
+                        a young child, growing up surrounded by many different cultures and
+                        peoples. This upbringing instilled in me a deep curiosity about the world
+                        and a strong desire to understand how things work on a fundamental level.
+                        As a child I was fascinated by technology, whether it was iphones or desktop
+                        computers, and I spent a lot of time learning about these technologies. 
+                        One thing that especially stood out to me was machine learning as the idea
+                        that a computer could learn like a human fascinated me. 
+
+                    </p>
+
+                    <p class="text-muted lead mb-4">
+
+                        Outside of this, I am also very interested in playing sports, especially
+                        basketball, working out, geography, hiking, sightseeing, cooking, and music.
+                        I also love languages and learning other cultures, as I am fluent in both 
+                        English and Hebrew, and am in the process of learning Spanish. I have been
+                        fortunate enough to travel to many countries around the world, and I hope to
+                        continue doing so in the future.
+
+                    </p>
+                    
+                    <p class="text-muted lead mb-4">
+
+                        If you browse this page and have questions or just want to connect, don't 
+                        hesitate to <a href="#contact">reach out!</a>
+                    </p>
+
+                    <button class="btn btn-outline-primary custom-btn" type="button" data-bs-toggle="collapse" data-bs-target="#resumeViewer" aria-expanded="false" aria-controls="resumeViewer">
+                        <i class="fas fa-file-pdf me-2"></i> View Resume
+                    </button>
+
+                    <div class="collapse mt-4" id="resumeViewer">
+                        <div class="card card-body shadow-sm">
+                            <div class="ratio ratio-1x1 resume-container">
+                                <embed src="resume.pdf" type="application/pdf" width="100%" height="100%">
+                            </div>
+                            <div class="mt-2">
+                                <small class="text-muted">Can't see the PDF? <a href="resume.pdf" target="_blank" class="text-decoration-none">Download it here</a>.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Featured Projects</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm project-card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">La Liga Match Predictor</h5>
+                        <h6 class="card-subtitle mb-2 text-primary-custom">Python / XGBoost / Streamlit</h6>
+                        <p class="card-text">
+                            A Machine Learning application that predicts football match outcomes. 
+                            It processes 20 years of historical data to engineer rolling-form features and uses 
+                            an <strong>XGBoost Classifier</strong> to calculate win probabilities. Includes a 
+                            <strong>Streamlit</strong> dashboard for visualizing real-time odds.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <a href="https://github.com/yaheli-azani/La-Liga-Outcome-Prediction-System" target="_blank" class="btn btn-sm btn-outline-dark">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm project-card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">AI Socratic Tutor</h5>
+                        <h6 class="card-subtitle mb-2 text-primary-custom">Python / RAG / Pinecone</h6>
+                        <p class="card-text">
+                            An intelligent tutoring API that ingests PDF class notes into a <strong>Pinecone</strong> 
+                            vector database. It uses <strong>Retrieval-Augmented Generation (RAG)</strong> and 
+                            OpenAI's GPT-4o to answer student questions, guiding them with context 
+                            from their specific course material and not just giving out the answers.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <a href="https://github.com/yaheli-azani/RAG-AI-project" target="_blank" class="btn btn-sm btn-outline-dark">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm project-card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Portfolio Website</h5>
+                        <h6 class="card-subtitle mb-2 text-primary-custom">HTML / Bootstrap / CSS</h6>
+                        <p class="card-text">
+                            A fully responsive personal portfolio website hosted on GitHub Pages. 
+                            Designed with Bootstrap and custom CSS for a modern aesthetic, 
+                            featuring smooth scrolling and mobile-optimized navigation.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <a href="https://github.com/yaheli-azani/yaheli-azani.github.io" target="_blank" class="btn btn-sm btn-outline-dark">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+    <section id="contact" class="py-5 text-white bg-dark">
+    <div class="container text-center">
+        <h2 class="mb-4">Connect With Me</h2>
+        <div class="mb-3">
+            <a href="tel:+19172262448" class="contact-link text-white text-decoration-none fs-5">
+                <i class="fas fa-phone-alt text-primary-custom me-2 fa-rotate-90"></i> +1 (917) 226-2448
+            </a>
+        </div>
+        <div class="mb-4">
+            <a href="mailto:azaniyaheli@gmail.com" class="contact-link text-white text-decoration-none fs-5">
+            <i class="fas fa-envelope text-primary-custom me-2"></i> azaniyaheli@gmail.com
+            </a>
+        </div>
+        <div class="mt-5 social-icons">
+            <a href="https://github.com/yaheli-azani" class="text-white mx-3" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/yaheli-azani/" class="text-white mx-3" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+    </div>
+    </section>
+
+    <footer class="py-3 text-center bg-black text-white-50">
+        <small>&copy; 2026 Yaheli Azani</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
